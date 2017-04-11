@@ -42,10 +42,10 @@
 	<preference name="android-maxSdkVersion" value="23" />
 	<preference name="android-installLocation" value="auto" />
 	<preference name="SplashScreenDelay" value="3000" />
-	<preference name="ErrorUrl" value="https://quickmed.edifarm.com.ec" />
+	<preference name="ErrorUrl" value="https://quickvet.edifarm.com.ec" />
 	<preference name="BackgroundColor" value="0x183e4e" />
 	<preference name="DisallowOverscroll" value="true" />
-	<preference name="LoadUrlTimeoutValue" value="https://quickmed.edifarm.com.ec" />-->
+	<preference name="LoadUrlTimeoutValue" value="https://quickvet.edifarm.com.ec" />-->
 	
 	
 	

@@ -38,15 +38,18 @@
 <div class="clearfix">&nbsp;</div>
 <div class="row wrapper">
   <div class="row headmenu">
-    <div class="col-xs-4 item" id="btnIngredientes" data-toggle="modal" data-target="#searchModal">
+    <div class="col-xs-3 item" id="btnIngredientes" data-toggle="modal" data-target="#searchModal">
       <h1><i class="fa fa-flask"></i></h1>
       <small>Principio Activo</small></div>
-    <div class="col-xs-4 borde item" id="btnLaboratorios" data-toggle="modal" data-target="#searchModal">
+    <div class="col-xs-3 borde item" id="btnLaboratorios" data-toggle="modal" data-target="#searchModal">
       <h1><i class="fa fa-industry"></i></h1>
       <small>Laboratorio</small></div>
-    <div class="col-xs-4 item" id="btnProductos" data-toggle="modal" data-target="#searchModal">
+    <div class="col-xs-3 borde item" id="btnProductos" data-toggle="modal" data-target="#searchModal">
       <h1><i class="fa fa-tags"></i></h1>
       <small>Productos</small></div>
+      <div class="col-xs-3 item" id="btnEspecies" data-toggle="modal" data-target="#searchModal">
+      <h1><i class="fa fa-tags"></i></h1>
+      <small>Especies</small></div>
   </div>
   <section id="resultados">
     <div class="clearfix">&nbsp;</div>
@@ -132,8 +135,12 @@
 						if(pr && pr!=''){
 							pr=' (<small>'+pr+'</small>) ';
 						}
+						var es=v.especie;
+						if(es && es!=''){
+							es=' (<small>'+es+'</small>) ';
+						}
 						
-						lista=lista+'<a href="info.html?producto='+v.idproducto+'" class="list-group-item"> <span class="precio"> '+v.producto+'</span> '+cc+' '+pr+'  <br> '+v.laboratorio+' <span class="pull-right"><i class="fa fa-angle-right"></i></span></a>';
+						lista=lista+'<a href="info.html?producto='+v.idproducto+'" class="list-group-item"> <span class="precio"> '+v.producto+'</span> '+cc+' '+pr+' '+es+'  <br> '+v.laboratorio+' <span class="pull-right"><i class="fa fa-angle-right"></i></span></a>';
 					});
 					
 					$('#lista_resultado').html(lista);

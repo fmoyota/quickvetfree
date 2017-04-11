@@ -15,6 +15,10 @@ $(document).ready(function(e) {
 		$('#modal-title span').html('Principio activo');
 	});
 	
+	$('#btnEspecies').click(function(e) {
+		$('#tabla').val('especie');
+		$('#modal-title span').html('Especies');
+	});
 	
 	$('#serchForm').submit(function(e) {
 		var d=$('#inputProducto').val();
