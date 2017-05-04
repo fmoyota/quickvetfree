@@ -111,7 +111,7 @@ h3, h4{
 .image img {
 	margin: auto;
 	display: block;
-	max-height: 250px;
+	max-height: 150px;
 }
 .image .imgprod {
 	padding: 1em;
