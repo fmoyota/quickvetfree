@@ -130,18 +130,25 @@
 <!-- Plugin JavaScript --> 
 <script src="js/jquery.easing.min.js"></script> 
 
+<script>alert('1')</script> 
 <script src="vendor/scrollreveal/scrollreveal.min.js"></script> 
 
+<script>alert('2')</script> 
 <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
 
+<script>alert('3')</script> 
 <script src="cordova.js"></script> 
 
+<script>alert('3')</script> 
 <script src="js/main.js"></script> 
 
+<script>alert('4')</script> 
 <script src="js/searchControll.js"></script> 
 
+<script>alert('5')</script> 
 <script src="js/owl.carousel.js"></script>
 
+<script>alert('5')</script> 
 		
 <script type="text/javascript"> 
 		$(document).ready(function(e) {
@@ -168,7 +175,7 @@ window.ga.trackView('Home');
 	
 	document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-	
+	alert(''+device.uuid);
             var doc='nuevos';
 			
 			var id='';
@@ -187,7 +194,7 @@ function onDeviceReady() {
 				
 			}, function(response) {
 			  //console.log( "success" );
-			//	alert('success');
+				alert('success');
 			  
 			})
 			  .done(function(data) {
@@ -218,7 +225,7 @@ function onDeviceReady() {
 			  .always(function() {
 				//console.log( "complete" );
 				  
-			//alert('11');
+			alert('11');
 				$('.loader').hide('slow');
 			  });
 }
