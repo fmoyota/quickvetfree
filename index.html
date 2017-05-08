@@ -215,9 +215,10 @@
 		
 	/*Analytics*/
 	window.ga.trackView('Intro');
+		
+		document.addEventListener("deviceready", onDeviceReady, false);
     });
     	
-		document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
     //alert('cordova'+device.cordova);
 	
@@ -225,11 +226,6 @@ function onDeviceReady() {
 			
 		//alert('Dispositivo: '+device.uuid);
 		window.localStorage.setItem('deviceuuid', ''+device.uuid);
-
-		
-		
-		
-		
 		
 		$.getJSON("https://quickvet.edifarm.com.ec/ws/mobile/login.php", {
 			deviceuuid:device.uuid, 
@@ -260,7 +256,7 @@ function onDeviceReady() {
 	
 }
 	
-onDeviceReady()
+onDeviceReady();
 //alert('final');
     </script>
     
