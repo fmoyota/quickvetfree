@@ -175,9 +175,9 @@ function admobDisplay() {
 
 document.addEventListener("deviceready", admobDisplay, false);
 
-
+alert('device');
 window.ga.startTrackerWithId('UA-18919211-2', 30);
-
+alert('setAnalytics');
 //*
 //analytics.startTrackerWithId('UA-18919211-2', successAnalytics, failAnalytics);
 //*/
