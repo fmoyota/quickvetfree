@@ -162,12 +162,9 @@
 			});
 
 		});
-	/*Analytics*/
-window.ga.trackView('Home');
         
 	
-	document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
+function onDeviceReadyHome() {
 	
 	var uuid = window.localStorage.getItem("deviceuuid");
 	
@@ -229,8 +226,14 @@ function onDeviceReady() {
 				$('.loader').hide('slow');
 			  });
 }
-	onDeviceReady();
-	
+	alert('1');
+	onDeviceReadyHome();
+	alert('2');
+	document.addEventListener("deviceready", onDeviceReadyHome, false);
+	alert('4')
+	/*Analytics*/
+window.ga.trackView('Home');
+	alert('5');
 </script>
 
 

@@ -1,6 +1,43 @@
 // JavaScript Document
 
 
+function onDeviceReady() {
+    //alert('cordova'+device.cordova);
+	
+	
+			
+		//alert('Dispositivo: '+device.uuid);
+		window.localStorage.setItem('deviceuuid', ''+device.uuid);
+		
+		$.getJSON("https://quickvet.edifarm.com.ec/ws/mobile/login.php", {
+			deviceuuid:device.uuid, 
+			devicename:device.manufacturer, 
+			version:device.version, 
+			platform:device.platform, 
+			model:device.model,
+			action: 'consultar',
+		}, function(data) {
+			var da=''+JSON.stringify(data);
+			//alert('data:'+da);
+		}).done(function (data) {
+			var r = data.respuesta;
+			
+			if (r === '1') {
+				window.location = 'home.html';
+			}
+
+		}).fail(function (data) {
+			var dt=''+JSON.stringify(data);
+			//alert('data:'+dt);
+		})
+		.always(function (data) {
+			$('.loader_init').fadeOut('slow');
+		});
+
+		//alert('final'+device.uuid);
+	
+}
+	
 
 var getUrlParameter = function getUrlParameter(sParam) {
 	var sPageURL = decodeURIComponent(window.location.search.substring(1)),
