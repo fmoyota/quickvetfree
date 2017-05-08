@@ -2,7 +2,7 @@
 
 
 function onDeviceReady() {
-    //alert('cordova'+device.cordova);
+   alert('cordova'+device.cordova);
 	
 	
 			
