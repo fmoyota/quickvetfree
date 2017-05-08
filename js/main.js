@@ -34,7 +34,7 @@ function getSettings() {
 			var g=0;
 		})
 		.done(function (data) {
-
+				alert('Datos: ' + JSON.stringify(data));
 			var r = data.respuesta;
 			var e = '';
 			var u = '';
