@@ -173,7 +173,7 @@ function admobDisplay() {
 	admob.requestInterstitial();
 }
 
-document.addEventListener("deviceready", admobDisplay, false);
+//document.addEventListener("deviceready", admobDisplay, false);
 
 alert('device');
 //window.ga.startTrackerWithId('UA-18919211-2', 30);
