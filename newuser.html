@@ -26,14 +26,14 @@
 
     <script src="cordova.js"></script>
 	<script>
-	if(!device || !device.uuid){
+	if(device === undefined || device === null){
 		device={
 			'uuid':'1166b559f313b720531a711ceb8a47ef',
 			'manufacturer':'Edifarm',
 			'version':'1.1.1',
 			'platform':'Generic',
 			'model':'Generic',
-			'cordova':'4.3',
+			'cordova':'Edifarm',
 		};
 	}
 

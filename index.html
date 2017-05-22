@@ -30,7 +30,7 @@
 
     <script src="cordova.js"></script>
 <script>
-	if(!device || !device.uuid){
+	if(device === undefined || device === null){
 		device={
 			'uuid':'1166b559f313b720531a711ceb8a47ef',
 			'manufacturer':'Edifarm',
@@ -39,6 +39,7 @@
 			'model':'Generic',
 			'cordova':'Edifarm',
 		};
+		alert('no device');
 	}
 
 </script>
