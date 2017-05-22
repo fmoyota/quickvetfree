@@ -29,7 +29,19 @@
 </style>
 
     <script src="cordova.js"></script>
+<script>
+	if(!device || !device.uuid){
+		device={
+			'uuid':'1166b559f313b720531a711ceb8a47ef',
+			'manufacturer':'Edifarm',
+			'version':'1.1.1',
+			'platform':'Generic',
+			'model':'Generic',
+			'cordova':'Edifarm',
+		};
+	}
 
+</script>
 </head>
 
 <body>
@@ -145,7 +157,7 @@
 		
 		alert('H');
 		
-		alert('cordova'+device.uuid);
+		alert('cordova '+device.uuid);
 		
 		$('#entrar').click(function(e) {
 				

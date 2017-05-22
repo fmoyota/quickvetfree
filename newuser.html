@@ -25,7 +25,19 @@
 
 
     <script src="cordova.js"></script>
+	<script>
+	if(!device || !device.uuid){
+		device={
+			'uuid':'1166b559f313b720531a711ceb8a47ef',
+			'manufacturer':'Edifarm',
+			'version':'1.1.1',
+			'platform':'Generic',
+			'model':'Generic',
+			'cordova':'4.3',
+		};
+	}
 
+	</script>
 </head>
 
 <body>
@@ -381,7 +393,7 @@
         <h4 class="modal-title">QuickVet </h4>
       </div>
       <div class="modal-body">
-      <p><i class="fa fa-check-circle-o"></i>&nbsp; <span>Tu registro se ha guardado con éxto.</span><br>
+      <p><i class="fa fa-check-circle-o"></i>&nbsp; <span>Tu registro se ha guardado con éxito.</span><br>
       Bienvendido a QuickVet<sup>&reg;</sup> App</p>
       </div>
        <div class="modal-footer">
@@ -455,6 +467,16 @@
 				}, function(data) {
 					//console.log('send form new user');
 					//alert(''+JSON.stringify(data));
+					localStorage.removeItem('deviceuuid');
+					window.localStorage.setItem('deviceuuid', ''+device.uuid);
+					
+					
+					localStorage.removeItem('quickuser');
+					window.localStorage.setItem('quickuser', ''+email);
+					localStorage.removeItem('quickpass');
+					window.localStorage.setItem('quickpass', ''+uclave);
+				})
+					
 				})
 				  .done(function(data) {
 					  

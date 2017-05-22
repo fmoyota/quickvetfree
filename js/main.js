@@ -1,11 +1,10 @@
 // JavaScript Document
 
 
+
 function onDeviceReady() {
-//   alert('cordova'+device.cordova);
-	
-	
-			
+   alert('cordova '+device.cordova);
+
 		//alert('Dispositivo: '+device.uuid);
 		window.localStorage.setItem('deviceuuid', ''+device.uuid);
 		
@@ -59,8 +58,14 @@ function getSettings() {
 	
 	var uuid = window.localStorage.getItem("deviceuuid");
 	
+	var quickuser = window.localStorage.getItem("quickuser");
+	var quickpass = window.localStorage.getItem("quickpass");
+	
+	
 	var jqxhr = $.getJSON("https://quickvet.edifarm.com.ec/ws/mobile/login.php", {
 			deviceuuid:uuid,
+			user:quickuser,
+			pass:quickpass,
 /*			deviceuuid: device.uuid,
 			devicename: device.manufacturer,
 			version: device.version,
