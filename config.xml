@@ -156,6 +156,7 @@
 	<!-- Monetiza App AdMob-->
 	<plugin name="phonegap-admob" spec="4.1.15" />
 	
+	
 </widget>
 
 
