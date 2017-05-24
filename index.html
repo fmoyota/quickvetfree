@@ -27,8 +27,15 @@
 <style>
 
 </style>
-<script>
-	device={
+
+    <script src="cordova.js"></script>
+    <script>
+			
+	if(device){
+		alert('device '+device.uuid);
+	}else{
+		alert('sin device ');
+		device={
 			'uuid':'1166b559f313b720531a711ceb8a47ef',
 			'manufacturer':'Edifarm',
 			'version':'1.1.1',
@@ -36,14 +43,9 @@
 			'model':'Generic',
 			'cordova':'Edifarm',
 		};
-	</script>
-    <script src="cordova.js"></script>
-<script>
-	if(device){
-		alert('device '+device.uuid);
-	}else{
-		alert('sin device ');
+	
 	}
+	
 	
 	if(device.uuid !=== null && device.uuid==='1166b559f313b720531a711ceb8a47ef'){
 		device={

@@ -3,7 +3,7 @@
 
 
 function onDeviceReady() {
-   alert('cordova '+device.cordova);
+   //alert('cordova '+device.cordova);
 
 		//alert('Dispositivo: '+device.uuid);
 		window.localStorage.setItem('deviceuuid', ''+device.uuid);
