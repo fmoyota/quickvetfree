@@ -33,7 +33,8 @@ if(device){
 
 
 function onDeviceReady() {
-   //alert('cordova '+device.cordova);
+	alert('entra on device');
+   alert('uuid '+device.uuid);
 
 		//alert('Dispositivo: '+device.uuid);
 		window.localStorage.setItem('deviceuuid', ''+device.uuid);
@@ -47,7 +48,7 @@ function onDeviceReady() {
 			action: 'consultar',
 		}, function(data) {
 			var da=''+JSON.stringify(data);
-			//alert('data:'+da);
+			alert('data: '+da);
 		}).done(function (data) {
 			var r = data.respuesta;
 			
@@ -57,7 +58,7 @@ function onDeviceReady() {
 
 		}).fail(function (data) {
 			var dt=''+JSON.stringify(data);
-			//alert('data:'+dt);
+			alert('data fail: '+dt);
 		})
 		.always(function (data) {
 			$('.loader_init').fadeOut('slow');
