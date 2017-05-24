@@ -1,33 +1,5 @@
 // JavaScript Document
 
-if(device){
-		alert('device '+device.uuid);
-	}else{
-		alert('sin device ');
-		device={
-			'uuid':'1166b559f313b720531a711ceb8a47ef',
-			'manufacturer':'Edifarm',
-			'version':'1.1.1',
-			'platform':'Generic',
-			'model':'Generic',
-			'cordova':'Edifarm',
-		};
-	
-	}
-	
-	
-	if(device.uuid !=== null && device.uuid==='1166b559f313b720531a711ceb8a47ef'){
-		device={
-			'uuid':'1166b559f313b720531a711ceb8a47ef',
-			'manufacturer':'Edifarm',
-			'version':'1.1.1',
-			'platform':'Generic',
-			'model':'Generic',
-			'cordova':'Edifarm',
-		};
-		alert('no device');
-	}
-
 
 
 
@@ -217,3 +189,33 @@ alert('setAnalytics');
 //*
 //analytics.startTrackerWithId('UA-18919211-2', successAnalytics, failAnalytics);
 //*/
+
+
+if(device){
+		alert('device '+device.uuid);
+	}else{
+		alert('sin device ');
+		device={
+			'uuid':'1166b559f313b720531a711ceb8a47ef',
+			'manufacturer':'Edifarm',
+			'version':'1.1.1',
+			'platform':'Generic',
+			'model':'Generic',
+			'cordova':'Edifarm',
+		};
+	
+	}
+	
+	
+	if(device.uuid !=== null && device.uuid==='1166b559f313b720531a711ceb8a47ef'){
+		device={
+			'uuid':'1166b559f313b720531a711ceb8a47ef',
+			'manufacturer':'Edifarm',
+			'version':'1.1.1',
+			'platform':'Generic',
+			'model':'Generic',
+			'cordova':'Edifarm',
+		};
+		alert('no device');
+	}
+
