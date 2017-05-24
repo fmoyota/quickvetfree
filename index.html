@@ -220,9 +220,9 @@
 		
 	
 		alert('ondevice');
-		document.addEventListener("deviceready", onDeviceReady, false);
+		//document.addEventListener("deviceready", onDeviceReady, false);
 		
-		//onDeviceReady();
+		onDeviceReady();
 		//alert('ready index');
     });
     	
@@ -234,7 +234,8 @@
 	alert('Analytics index');
 	
 	
-	
+	document.addEventListener("deviceready", onDeviceReady, false);
+	alert('F');
     </script>
     
 </body>

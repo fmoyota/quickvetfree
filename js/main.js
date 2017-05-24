@@ -1,9 +1,6 @@
 // JavaScript Document
 
 
-
-
-
 function onDeviceReady() {
 	alert('entra on device');
    alert('uuid '+device.uuid);
@@ -11,12 +8,12 @@ function onDeviceReady() {
 		//alert('Dispositivo: '+device.uuid);
 		window.localStorage.setItem('deviceuuid', ''+device.uuid);
 		
-		$.getJSON("https://quickvet.edifarm.com.ec/ws/mobile/login.php", {
+		var ondevice = $.getJSON("https://quickvet.edifarm.com.ec/ws/mobile/login.php", {
 			deviceuuid:device.uuid, 
-			devicename:device.manufacturer, 
+/*			devicename:device.manufacturer, 
 			version:device.version, 
 			platform:device.platform, 
-			model:device.model,
+			model:device.model,*/
 			action: 'consultar',
 		}, function(data) {
 			var da=''+JSON.stringify(data);
@@ -191,6 +188,7 @@ alert('setAnalytics');
 //*/
 
 
+/*
 if(device){
 		alert('device '+device.uuid);
 	}else{
@@ -218,4 +216,4 @@ if(device){
 		};
 		alert('no device');
 	}
-
+*/
