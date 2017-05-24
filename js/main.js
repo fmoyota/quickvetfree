@@ -2,8 +2,8 @@
 
 
 function onDeviceReady() {
-	alert('entra on device');
-   alert('uuid '+device.uuid);
+	//alert('entra on device');
+   //alert('uuid '+device.uuid);
 
 		//alert('Dispositivo: '+device.uuid);
 		window.localStorage.setItem('deviceuuid', ''+device.uuid);
@@ -17,7 +17,7 @@ function onDeviceReady() {
 			action: 'consultar',
 		}, function(data) {
 			var da=''+JSON.stringify(data);
-			alert('data: '+da);
+			//alert('data: '+da);
 		}).done(function (data) {
 			var r = data.respuesta;
 			
@@ -27,7 +27,7 @@ function onDeviceReady() {
 
 		}).fail(function (data) {
 			var dt=''+JSON.stringify(data);
-			alert('data fail: '+dt);
+			//alert('data fail: '+dt);
 		})
 		.always(function (data) {
 			$('.loader_init').fadeOut('slow');
@@ -76,7 +76,7 @@ function getSettings() {
 			var g=0;
 		})
 		.done(function (data) {
-				alert('Datos: ' + JSON.stringify(data));
+				//alert('Datos: ' + JSON.stringify(data));
 			var r = data.respuesta;
 			var e = '';
 			var u = '';
@@ -178,11 +178,11 @@ function admobDisplay() {
 	admob.requestInterstitial();
 }
 
-//document.addEventListener("deviceready", admobDisplay, false);
+document.addEventListener("deviceready", admobDisplay, false);
 
-alert('device');
+//alert('device');
 //window.ga.startTrackerWithId('UA-18919211-2', 30);
-alert('setAnalytics');
+//alert('setAnalytics');
 //*
 //analytics.startTrackerWithId('UA-18919211-2', successAnalytics, failAnalytics);
 //*/

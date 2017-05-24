@@ -151,7 +151,7 @@
 		alert('cordova '+device.uuid);
 		
 		$('#entrar').click(function(e) {
-				
+				alert('entrar');
 				$('.loader').fadeIn('fast');
 				var email=$('#email').val();
 				
@@ -175,10 +175,14 @@
 						action:'login',
 						
 					}, function(data) {
+						
 						//console.log('send form new user');
 						var dat=data;
+						
+						  alert('Error' + JSON.stringify(dat));
 					})
 					  .done(function(data) {
+						  alert('Datos' + JSON.stringify(data));
 						var r=data.respuesta;
 						if(r=='1'){
 							window.location='home.html';
@@ -190,6 +194,7 @@
 					  })
 					  .fail(function(data) {
 						//console.log('Error' + JSON.stringify(data));
+						  alert('Error' + JSON.stringify(data));
 						$('#mensaje span').html('Verifica tu acceso a datos o wifi');
 						$('#messageModal').modal('show');
 					  })
@@ -219,10 +224,10 @@
 		
 		
 	
-		alert('ondevice');
+		//alert('ondevice');
 		//document.addEventListener("deviceready", onDeviceReady, false);
 		
-		onDeviceReady();
+		
 		//alert('ready index');
     });
     	
@@ -231,11 +236,12 @@
 	
 	/*Analytics*/
 	//window.ga.trackView('Intro');
-	alert('Analytics index');
+	//alert('Analytics index');
 	
 	
 	document.addEventListener("deviceready", onDeviceReady, false);
-	alert('F');
+	//alert('F');
+	//onDeviceReady();
     </script>
     
 </body>
