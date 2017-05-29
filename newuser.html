@@ -24,7 +24,6 @@
 <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 
 
-    <script src="cordova.js"></script>
 	<script>
 
 </script>
@@ -398,10 +397,15 @@
 
 <!-- jQuery --> 
 <script src="vendor/jquery/jquery.min.js"></script> 
+<script src="cordova.js"></script> 
 <script src="js/main.js"></script> 
 <script type="text/javascript"> 
 		$(document).ready(function(e) {
 			
+			ondeviceReady();
+			alert('listo para registro');
+			
+			$('.loader').fadeOut('slow');
 			
 			$('#enviar').click(function(e) {
 				
@@ -466,7 +470,6 @@
 					window.localStorage.setItem('quickuser', ''+email);
 					localStorage.removeItem('quickpass');
 					window.localStorage.setItem('quickpass', ''+uclave);
-				})
 					
 				})
 				  .done(function(data) {
@@ -496,7 +499,6 @@
 						
 			});   
 			
-			$('.loader').fadeOut('slow');
 					
 			/* Links Externos */
 			
