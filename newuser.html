@@ -405,7 +405,7 @@
 			
 			$('#enviar').click(function(e) {
 				
-				
+				alert('enviar ' + device.uuid);
 				$('.loader').fadeIn('fast');
 				
 				var email=$('#email').val();
@@ -457,7 +457,7 @@
 					
 				}, function(data) {
 					//console.log('send form new user');
-					//alert(''+JSON.stringify(data));
+					alert(''+JSON.stringify(data));
 					localStorage.removeItem('deviceuuid');
 					window.localStorage.setItem('deviceuuid', ''+device.uuid);
 					

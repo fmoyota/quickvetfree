@@ -481,8 +481,8 @@
 		var uuid = window.localStorage.getItem("deviceuuid");
 
 		alert(''+device.uuid+'-'+uuid);
-		
-       		document.addEventListener("deviceready", getSettings, false);
+		getSettings();
+//       	document.addEventListener("deviceready", getSettings, false);
 			
 			//alert('llamo a settings');
 			$('#enviar').click(function(e) {
@@ -514,11 +514,12 @@
 					//alert('update');
 					var jqxhr = $.post( "https://quickvet.edifarm.com.ec/ws/mobile/login.php",
 					{
-						deviceuuid:device.uuid, 
+						deviceuuid:uuid,
+/*						deviceuuid:device.uuid, 
 						devicename:device.manufacturer, 
 						version:device.version, 
 						platform:device.platform, 
-						model:device.model,
+						model:device.model,*/
 						country:nation,
 						city:ucity,
 						phone:uphone,
