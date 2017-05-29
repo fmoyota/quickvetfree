@@ -2,8 +2,7 @@
 
 
 function onDeviceReady() {
-	//alert('entra on device');
-   //alert('uuid '+device.uuid);
+	alert('entra on device uuid: '+device.uuid);
 
 		//alert('Dispositivo: '+device.uuid);
 		window.localStorage.setItem('deviceuuid', ''+device.uuid);

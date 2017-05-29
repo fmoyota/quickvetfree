@@ -114,8 +114,8 @@
 
 
 <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <!--<script src="vendor/jquery/jquery-3.1.1.min.js"></script>-->
+    <!--<script src="vendor/jquery/jquery.min.js"></script>-->
+    <script src="vendor/jquery/jquery-3.1.1.min.js"></script>
  
     <script src="cordova.js"></script>
 	<script src="js/main.js"></script>
@@ -225,8 +225,9 @@
 		
 	
 		//alert('ondevice');
-		document.addEventListener("deviceready", onDeviceReady, false);
+		//document.addEventListener("deviceready", onDeviceReady, false);
 		
+		onDeviceReady();
 		alert('ready index');
     });
     	
