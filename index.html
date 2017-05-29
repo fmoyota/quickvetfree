@@ -148,10 +148,10 @@
 		
 		//alert('H');
 		
-		alert('cordova '+device.uuid);
+		//alert('cordova '+device.uuid);
 		
 		$('#entrar').click(function(e) {
-				alert('entrar');
+				//alert('entrar');
 				$('.loader').fadeIn('fast');
 				var email=$('#email').val();
 				
@@ -179,10 +179,10 @@
 						//console.log('send form new user');
 						var dat=data;
 						
-						  alert('Error' + JSON.stringify(dat));
+						  //alert('Error' + JSON.stringify(dat));
 					})
 					  .done(function(data) {
-						  alert('Datos' + JSON.stringify(data));
+						 //alert('Datos' + JSON.stringify(data));
 						var r=data.respuesta;
 						if(r=='1'){
 							window.location='home.html';
@@ -194,7 +194,7 @@
 					  })
 					  .fail(function(data) {
 						//console.log('Error' + JSON.stringify(data));
-						  alert('Error' + JSON.stringify(data));
+						  //alert('Error' + JSON.stringify(data));
 						$('#mensaje span').html('Verifica tu acceso a datos o wifi');
 						$('#messageModal').modal('show');
 					  })

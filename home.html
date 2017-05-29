@@ -163,7 +163,7 @@
 			  itemsDesktopSmall : [768,2]
 		 
 			});
-			alert('ready home');
+			//alert('ready home');
 		});
         
 	
@@ -172,8 +172,8 @@ function onDeviceReadyHome() {
 	var uuid = window.localStorage.getItem("deviceuuid");
 	
 	
-	alert(''+uuid);
-	alert(''+device.uuid+'-'+uuid);
+	//alert(''+uuid);
+	//alert(''+device.uuid+'-'+uuid);
 	
 	
             var doc='nuevos';
@@ -185,16 +185,16 @@ function onDeviceReadyHome() {
 			{
 				producto:doc,
 				tabla:doc,
-				deviceuuid: device.uuid,
-				devicename: device.manufacturer,
+				deviceuuid: uuid,
+				/*devicename: device.manufacturer,
 				version: device.version,
 				platform: device.platform,
-				model: device.model,
+				model: device.model,*/
 				
 				
 			}, function(response) {
 			  //console.log( "success" );
-				//alert('success');
+				alert('success');
 			  
 			})
 			  .done(function(data) {
@@ -229,14 +229,14 @@ function onDeviceReadyHome() {
 				$('.loader').hide('slow');
 			  });
 }
-	alert('1');
+	//alert('1');
 	onDeviceReadyHome();
-	alert('2');
+	//alert('2');
 	document.addEventListener("deviceready", onDeviceReadyHome, false);
-	alert('4')
+	//alert('4')
 	/*Analytics*/
-window.ga.trackView('Home');
-	alert('5');
+//window.ga.trackView('Home');
+	//alert('5');
 </script>
 
 
