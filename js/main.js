@@ -8,6 +8,7 @@ function onDeviceReady() {
 		//alert('Dispositivo: '+device.uuid);
 		window.localStorage.setItem('deviceuuid', ''+device.uuid);
 		
+	
 		var ondevice = $.getJSON("https://quickvet.edifarm.com.ec/ws/mobile/login.php", {
 			deviceuuid:device.uuid, 
 /*			devicename:device.manufacturer, 
@@ -34,6 +35,14 @@ function onDeviceReady() {
 		});
 
 		//alert('final'+device.uuid);
+	
+		var uuid = window.localStorage.getItem("deviceuuid");
+	
+	
+		//alert(''+uuid);
+		alert('on device guardar '+device.uuid+'-'+uuid);
+	
+		$('.loader_init').fadeOut('slow');
 	
 }
 	
