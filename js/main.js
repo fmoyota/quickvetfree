@@ -2,7 +2,7 @@
 
 
 function onDeviceReady() {
-	alert('entra on device uuid: '+device.uuid);
+	//alert('entra on device uuid: '+device.uuid);
 
 		//alert('Dispositivo: '+device.uuid);
 		window.localStorage.setItem('deviceuuid', ''+device.uuid);
@@ -39,7 +39,7 @@ function onDeviceReady() {
 	
 	
 		//alert(''+uuid);
-		alert('on device guardar '+device.uuid+'-'+uuid);
+		//alert('on device guardar '+device.uuid+'-'+uuid);
 	
 		$('.loader_init').fadeOut('slow');
 	
@@ -195,33 +195,3 @@ document.addEventListener("deviceready", admobDisplay, false);
 //analytics.startTrackerWithId('UA-18919211-2', successAnalytics, failAnalytics);
 //*/
 
-
-/*
-if(device){
-		alert('device '+device.uuid);
-	}else{
-		alert('sin device ');
-		device={
-			'uuid':'1166b559f313b720531a711ceb8a47ef',
-			'manufacturer':'Edifarm',
-			'version':'1.1.1',
-			'platform':'Generic',
-			'model':'Generic',
-			'cordova':'Edifarm',
-		};
-	
-	}
-	
-	
-	if(device.uuid !=== null && device.uuid==='1166b559f313b720531a711ceb8a47ef'){
-		device={
-			'uuid':'1166b559f313b720531a711ceb8a47ef',
-			'manufacturer':'Edifarm',
-			'version':'1.1.1',
-			'platform':'Generic',
-			'model':'Generic',
-			'cordova':'Edifarm',
-		};
-		alert('no device');
-	}
-*/

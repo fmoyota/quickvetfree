@@ -394,17 +394,16 @@
 <script src="vendor/scrollreveal/scrollreveal.min.js"></script> 
 <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
 <script src="js/md5.js"></script>
-<script src="js/moment.min.js"></script> 
 <script type="text/javascript"> 
 		$(document).ready(function(e) {
 			
-			alert('listo para registro');
+			//alert('listo para registro');
 			
 			$('.loader').fadeOut('slow');
 			
 			$('#enviar').click(function(e) {
 				
-				alert('enviar ' + device.uuid);
+				//alert('enviar ' + device.uuid);
 				$('.loader').fadeIn('fast');
 				
 				var email=$('#email').val();
@@ -456,7 +455,7 @@
 					
 				}, function(data) {
 					//console.log('send form new user');
-					alert(''+JSON.stringify(data));
+					//alert(''+JSON.stringify(data));
 					localStorage.removeItem('deviceuuid');
 					window.localStorage.setItem('deviceuuid', ''+device.uuid);
 					

@@ -352,3 +352,8 @@ a:focus {
   color: #873D00;
   text-decoration: underline;
 }
+
+
+.combodate select{
+	border: solid 1px #ccc;
+}
