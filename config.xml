@@ -6,7 +6,7 @@
   <preference name="phonegap-version" value="cli-7.0.1" />
   <name>QuickVet</name>
   <description>La forma eficaz de encontrar información sobre fármacos de uso veterinario, desde su teléfono móvil o tablet.  Cuenta con más de 3 000 productos que se comercializan en Ecuador. Obtendrá información como: Nombre comercial del producto, principio activo, laboratorio, índice terapéutico, especies animales, clasificación ATC, reacciones adversas, interacciones medicamentosas e incluye los precios referenciales de venta al público.</description>
-  <author href="https://www.edifarm.com.ec" email="fmoyota@edifarm.com.ec">Fernando Moyota</author>
+  <author href="http://www.xpaien.biz" email="fernando.moyota@xapien.biz">XAPIEN</author>
   <platform name="ios">
     <icon src="img/icon/Icono-QV-57x57.png" width="57" height="57" />
     <icon src="img/icon/Icono-QV-144x144.png" width="144" height="144" />
