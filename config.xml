@@ -4,7 +4,8 @@
 	id        = "ec.com.edifarm.quickvetfree"
 	version   = "2.1.1">
   <preference name="phonegap-version" value="cli-7.0.1" />
-  <preference name='pgb-builder-version' value='1' />
+  <!--<preference name='phonegap-version' value='cli-6.5.0' />
+  <preference name='pgb-builder-version' value='1' />-->
   <name>QuickVet</name>
   <description>La forma eficaz de encontrar información sobre fármacos de uso veterinario, desde su teléfono móvil o tablet.  Cuenta con más de 3 000 productos que se comercializan en Ecuador. Obtendrá información como: Nombre comercial del producto, principio activo, laboratorio, índice terapéutico, especies animales, clasificación ATC, reacciones adversas, interacciones medicamentosas e incluye los precios referenciales de venta al público.</description>
   <author href="http://www.xpaien.biz" email="fernando.moyota@xapien.biz">XAPIEN</author>
@@ -41,6 +42,8 @@
     <preference name="target-device" value="handset" />
 	  
     <!--<plugin name="cordova-plugin-firebase-messaging"/>-->
+    <resource-file src="GoogleService-Info.plist" />
+    
   </platform>
   <platform name="android">
     <icon src="img/icon/Icono-QV-36x36.png" qualifier="ldpi" />
@@ -62,6 +65,7 @@
     <splash src="img/splash/QV-1280x1920.jpg" qualifier="" />
     <splash src="img/splash/QV-1920x1280.jpg" qualifier="" />
     <!--<plugin name="cordova-plugin-firebase"/>-->
+    <resource-file src="google-services.json" target="google-services.json" />
   </platform>
   <icon src="icon.png" />
   <preference name="orientation" value="portrait" />
@@ -82,7 +86,7 @@
   <plugin name="cordova-plugin-whitelist" />
   <plugin name="cordova-plugin-device"/>
   
-  <plugin name="cordova-plugin-firebase"/>
+  <plugin name="phonegap-plugin-push"/>
   
   <!-- Monetiza App AdMob-->
   <plugin name="phonegap-admob" />
