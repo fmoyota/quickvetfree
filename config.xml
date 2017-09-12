@@ -42,7 +42,7 @@
     <preference name="target-device" value="handset" />
 	  
     <!--<plugin name="cordova-plugin-firebase-messaging"/>-->
-    <resource-file src="GoogleService-Info.plist" />
+    <!--<resource-file src="GoogleService-Info.plist" />-->
     
   </platform>
   <platform name="android">
@@ -65,7 +65,7 @@
     <splash src="img/splash/QV-1280x1920.jpg" qualifier="" />
     <splash src="img/splash/QV-1920x1280.jpg" qualifier="" />
     <!--<plugin name="cordova-plugin-firebase"/>-->
-    <resource-file src="google-services.json" target="google-services.json" />
+    <!--<resource-file src="google-services.json" target="google-services.json" />-->
   </platform>
   <icon src="icon.png" />
   <preference name="orientation" value="portrait" />
