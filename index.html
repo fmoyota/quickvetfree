@@ -229,6 +229,24 @@
 		
 		onDeviceReady();
 		//alert('ready index');
+		
+		if(device && device.manufacturer==='Apple'){
+			//alert('permiso apple');
+			//window.FirebasePlugin.grantPermission();
+			//*
+			window.cordova.plugins.firebase.messaging.requestPermission(function(token) {
+				alert("APNS device token: "+ token);
+			});
+			window.cordova.plugins.firebase.messaging.onTokenRefresh(function(token) {
+				alert("Got device token: ", token);
+			});
+			window.cordova.plugins.firebase.messaging.onMessage(function(payload) {
+				alert("New FCM message: ", payload);
+			});
+			//alert('inicio');
+			/**/
+		}
+		
     });
     	
 	

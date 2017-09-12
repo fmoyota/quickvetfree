@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "654897333970",
+    "firebase_url": "https://quickvet-45574.firebaseio.com",
+    "project_id": "quickvet-45574",
+    "storage_bucket": "quickvet-45574.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654897333970:android:850729d0f804b0a0",
+        "android_client_info": {
+          "package_name": "ec.com.edifarm.quickvetfree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654897333970-td99vbs8moknih9levi27hu3r3k8256n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ec.com.edifarm.quickvetfree",
+            "certificate_hash": "6d3f4d286a742b217ae948e388bad29075d57276"
+          }
+        },
+        {
+          "client_id": "654897333970-4mjup221l2tijvtss6pneol1590avqrt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP7HblKPvWlCpKFLy886E6PTQW3TU_Ns4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654897333970-4mjup221l2tijvtss6pneol1590avqrt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "654897333970-39k8p19vasg3c240jjaps4a07vui51u2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ec.com.edifarm.quickvetfree"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
