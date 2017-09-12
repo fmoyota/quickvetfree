@@ -81,6 +81,8 @@
   <plugin name="cordova-plugin-whitelist" />
   <plugin name="cordova-plugin-device"/>
   
+  <plugin name="cordova-plugin-firebase"/>
+  
   <!-- Monetiza App AdMob-->
   <plugin name="phonegap-admob" />
   

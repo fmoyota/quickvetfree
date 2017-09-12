@@ -232,8 +232,12 @@
 		
 		if(device && device.manufacturer==='Apple'){
 			//alert('permiso apple');
-			//window.FirebasePlugin.grantPermission();
-			//*
+			window.FirebasePlugin.grantPermission();
+			
+			window.FirebasePlugin.hasPermission(function(data){
+				alert(JSON.stringify(data.isEnabled));
+			});
+			/*
 			window.cordova.plugins.firebase.messaging.requestPermission(function(token) {
 				alert("APNS device token: "+ token);
 			});
