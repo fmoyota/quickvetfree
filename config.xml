@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id        = "ec.com.edifarm.quickvetfree"
-	version   = "2.2.2">
+	version   = "2.2.3">
   <preference name="phonegap-version" value="cli-8.0.0" />
   <!--<preference name='phonegap-version' value='cli-6.5.0' />
   <preference name='pgb-builder-version' value='1' />-->
@@ -41,8 +41,7 @@
     <preference name="detect-data-types" value="true" />
     <preference name="target-device" value="handset" />
 	  
-    <!--<plugin name="cordova-plugin-firebase-messaging"/>-->
-    <!--<resource-file src="GoogleService-Info.plist" />-->
+      
     
   </platform>
   <platform name="android">
@@ -64,8 +63,7 @@
     <splash src="img/splash/QV-1600x960.jpg" qualifier="" />
     <splash src="img/splash/QV-1280x1920.jpg" qualifier="" />
     <splash src="img/splash/QV-1920x1280.jpg" qualifier="" />
-    <!--<plugin name="cordova-plugin-firebase"/>-->
-    <!--<resource-file src="google-services.json" target="google-services.json" />-->
+      
   </platform>
   <icon src="icon.png" />
   <preference name="orientation" value="portrait" />
@@ -73,8 +71,7 @@
   <preference name="target-device" value="universal" />
   <preference name="fullscreen" value="true"/>
   <preference name="stay-in-webview" value="false" />
-<!--  <preference name="AutoHideSplashScreen" value="true" />
-  <preference name="SplashScreenDelay" value="3000" />-->
+    
   <feature name="InAppBrowser">
     <param name="android-package" value="org.apache.cordova.InAppBrowser" />
     <param name="ios-package" value="CDVInAppBrowser" />
@@ -86,7 +83,6 @@
   <plugin name="cordova-plugin-whitelist" />
   <plugin name="cordova-plugin-device"/>
   
-  <plugin name="cordova-plugin-firebase"/>
   
   <!-- Monetiza App AdMob-->
   <plugin name="phonegap-admob" />
