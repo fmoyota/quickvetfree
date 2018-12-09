@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id        = "ec.com.edifarm.quickvetfree"
-	version   = "2.2.4">
+	version   = "2.2.5">
   <preference name="phonegap-version" value="cli-8.0.0" />
   <!--<preference name='phonegap-version' value='cli-6.5.0' />
   <preference name='pgb-builder-version' value='1' />-->
@@ -45,6 +45,13 @@
     
   </platform>
   <platform name="android">
+
+    <preference name="android-build-tool" value="ant" />
+    <preference name="android-minSdkVersion" value="20" />
+<!--    <preference name="android-maxSdkVersion" value="15" />
+    <preference name="android-targetSdkVersion" value="12" />-->
+    <preference name="android-installLocation" value="auto" />
+
     <icon src="img/icon/Icono-QV-36x36.png" qualifier="ldpi" />
     <icon src="img/icon/Icono-QV-48x48.png" qualifier="mdpi" />
     <icon src="img/icon/Icono-QV-72x72.png" qualifier="hdpi" />
