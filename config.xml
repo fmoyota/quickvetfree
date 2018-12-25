@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id        = "ec.com.edifarm.quickvetfree"
-	version   = "2.2.7">
+	version   = "2.2.8">
   <preference name="phonegap-version" value="cli-7.1.0"/>
   <!--<preference name='phonegap-version' value='cli-6.5.0' />
   <preference name='pgb-builder-version' value='1' />-->
@@ -58,18 +58,18 @@
     <icon src="img/icon/Icono-QV-96x96.png" qualifier="xhdpi" />
     <icon src="img/icon/Icono-QV-144x144.png" qualifier="xxhdpi" />
     <icon src="img/icon/Icono-QV-192x192.png" qualifier="xxxhdpi" />
-    <splash src="img/splash/QV-240x320.jpg" qualifier="" />
-    <splash src="img/splash/QV-320x240.jpg" qualifier="" />
-    <splash src="img/splash/QV-320x480.jpg" qualifier="" />
-    <splash src="img/splash/QV-480x320.jpg" qualifier="" />
-    <splash src="img/splash/QV-480x800.jpg" qualifier="" />
-    <splash src="img/splash/QV-800x480.jpg" qualifier="" />
-    <splash src="img/splash/QV-720x1280.jpg" qualifier="" />
-    <splash src="img/splash/QV-1280x720.jpg" qualifier="" />
-    <splash src="img/splash/QV-960x1600.jpg" qualifier="" />
-    <splash src="img/splash/QV-1600x960.jpg" qualifier="" />
-    <splash src="img/splash/QV-1280x1920.jpg" qualifier="" />
-    <splash src="img/splash/QV-1920x1280.jpg" qualifier="" />
+    <splash src="img/splash/QV-240x320.png" qualifier="" />
+    <splash src="img/splash/QV-320x240.png" qualifier="" />
+    <splash src="img/splash/QV-320x480.png" qualifier="" />
+    <splash src="img/splash/QV-480x320.png" qualifier="" />
+    <splash src="img/splash/QV-480x800.png" qualifier="" />
+    <splash src="img/splash/QV-800x480.png" qualifier="" />
+    <splash src="img/splash/QV-720x1280.png" qualifier="" />
+    <splash src="img/splash/QV-1280x720.png" qualifier="" />
+    <splash src="img/splash/QV-960x1600.png" qualifier="" />
+    <splash src="img/splash/QV-1600x960.png" qualifier="" />
+    <splash src="img/splash/QV-1280x1920.png" qualifier="" />
+    <splash src="img/splash/QV-1920x1280.png" qualifier="" />
       
   </platform>
   <icon src="icon.png" />
