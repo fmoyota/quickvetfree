@@ -228,7 +228,36 @@
 		//alert('ondevice');
 		//document.addEventListener("deviceready", onDeviceReady, false);
 		
-		onDeviceReady();
+		//onDeviceReady();
+        //verificar equipo registrado
+        //alert('Dispositivo: '+device.uuid);
+		window.localStorage.setItem('deviceuuid', ''+device.uuid);
+		
+	
+		var ondevice = $.getJSON("https://quickvet.edifarm.com.ec/ws/mobile/login.php", {
+			deviceuuid:device.uuid, 
+			action: 'consultar',
+		}, function(data) {
+			var da=''+JSON.stringify(data);
+			//alert('data: '+da);
+		}).done(function (data) {
+			var r = data.respuesta;
+			
+			if (r === '1') {
+				window.location = 'home.html';
+			}
+
+		}).fail(function (data) {
+			var dt=''+JSON.stringify(data);
+			//alert('data fail: '+dt);
+		})
+		.always(function (data) {
+			$('.loader_init').fadeOut('slow');
+		});
+
+		//alert('final'+device.uuid);
+        
+        
 		//alert('ready index');
 		
 		if(device && device.manufacturer==='Apple'){
